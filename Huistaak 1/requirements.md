@@ -1,7 +1,6 @@
 # Huistaak 1 - Requirements duikschool
 
 ## ACT-010 Keuze registratie of login
-- (I) -
 - (P) De gebruiker maakt een keuze voor registreren of inloggen
 - (O) REQ-XXX Het is gekend of de gebruiker wil registreren of inloggen
 
@@ -38,9 +37,30 @@
 - (I) REQ-XXX Correcte e-mail & wachtwoord combinaties zijn gekend
 - (P) REQ-XXX Het systeem controleert of de combinatie van email & wachtwoord geldig is
 - (O) REQ-XXX Het is bekend of de login succesvol was
-- (O) REQ-XXX 
+- (O) REQ-XXX Indien de login succesvol is, is het bekend welke gebruiker ingelogd is
 
-ACT-070
-(I) REQ-XXX 
-(P) REQ-XXX 
-(O) REQ-XXX 
+## ACT-070 Gegevens duik invoeren
+- (I) REQ-XXX Het is gekend in welke landen de duiklocaties gelegen zijn
+- (I) REQ-XXX De duiklocaties zijn gekend
+- (P) REQ-XXX De gebruiker kiest locatie, kiest datum, vult duur en maximale diepte in
+- (O) REQ-XXX De gegevens van de duik zijn bekend
+
+## ACT-080 Invoer duik valideren
+- (I) REQ-XXX De gegevens van de duik zijn bekend
+- (I) REQ-XXX Het is bekend welke certificaten de gebruiker heeft
+- (P) REQ-XXX Standaard is de duik geldig
+- (P) REQ-XXX De duik is ongeldig als de gekozen datum in de toekomst ligt
+- (P) REQ-XXX De duik is ongeldig als de duur langer is dan 60 min
+- (P) REQ-XXX De duik is ongeldig als de maximale diepte groter is dan 18m en het hoogste certificaat OWD is
+- (P) REQ-XXX De duik is ongeldig als de maimale diepte groter is dan 30m en het hoogste certificaat AOWD of DI is
+- (O) REQ-XXX De geldigheid van de duik is gekend
+
+### ACT-090 Duik als ongeldig markeren
+- (I) REQ-XXX De geldigheid van de duik is gekend
+- (P) REQ-XXX De duik wordt als ongeldig gemarkeerd
+- (O) REQ-XXX de gegevens van de duik inclusief de geldigheid zijn gekend
+
+### ACT-100 Duik opslaan
+- (I) REQ-XXX de gegevens van de duik inclusief de geldigheid zijn gekend
+- (P) REQ-XXX De duik wordt bewaard
+

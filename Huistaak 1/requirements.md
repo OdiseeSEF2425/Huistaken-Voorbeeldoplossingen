@@ -55,12 +55,12 @@
 - (P) REQ-XXX De duik is ongeldig als de maimale diepte groter is dan 30m en het hoogste certificaat AOWD of DI is
 - (O) REQ-XXX De geldigheid van de duik is gekend
 
-### ACT-090 Duik als ongeldig markeren
+## ACT-090 Duik als ongeldig markeren
 - (I) REQ-XXX De geldigheid van de duik is gekend
 - (P) REQ-XXX De duik wordt als ongeldig gemarkeerd
 - (O) REQ-XXX de gegevens van de duik inclusief de geldigheid zijn gekend
 
-### ACT-100 Duik opslaan
+## ACT-100 Duik opslaan
 - (I) REQ-XXX de gegevens van de duik inclusief de geldigheid zijn gekend
 - (P) REQ-XXX De duik wordt bewaard
 

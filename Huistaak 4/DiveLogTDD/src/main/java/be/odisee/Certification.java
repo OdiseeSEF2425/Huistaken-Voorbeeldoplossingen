@@ -46,11 +46,18 @@ public class Certification {
     /**
      * Constructor voor Certification
      * @param certificationLevel niveau certificatioe
-     * @param date datum certificatie
+     * @param date datu m certificatie
      */
     public Certification(CertificationLevel certificationLevel, LocalDate date) {
         this.certificationLevel = certificationLevel;
         this.date = date;
     }
 
+    @Override
+    public String toString() {
+        return "Certification{" +
+                "certificationLevel=" + certificationLevel +
+                ", date=" + date +
+                '}';
+    }
 }

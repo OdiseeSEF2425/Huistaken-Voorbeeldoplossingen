@@ -106,7 +106,7 @@ class DiveValidatorTest {
      * REQ-0028 De duik is ongeldig als de duur langer is dan 60 min
      */
     @Test
-    public void dive_duration_morethan60_valid_returns_true() {
+    public void dive_duration_morethan60_valid_returns_false() {
         // Arrange
         sampleDive.setDuration(61);
 

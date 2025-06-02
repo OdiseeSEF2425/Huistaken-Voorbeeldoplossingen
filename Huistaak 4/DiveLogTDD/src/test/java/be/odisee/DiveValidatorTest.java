@@ -72,7 +72,7 @@ class DiveValidatorTest {
      * REQ-0027 De duik is ongeldig als de gekozen datum in de toekomst ligt
      */
     @Test
-    public void dive_date_future_valid_returns_true() {
+    public void dive_date_future_valid_returns_false() {
 
         // Arrange
         sampleDive.setDate(LocalDate.now().plusDays(1));
